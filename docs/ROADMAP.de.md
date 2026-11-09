@@ -1,6 +1,6 @@
 # Roadmap: Octa Home UI 1.0
 
-Stand: 09.11.2026, Version 0.1.7. Zielsystem ist Home Assistant Container 2026.9.4.
+Stand: 09.11.2026, Version 0.1.8. Zielsystem ist Home Assistant Container 2026.9.4.
 
 English version: [ROADMAP.md](ROADMAP.md).
 
