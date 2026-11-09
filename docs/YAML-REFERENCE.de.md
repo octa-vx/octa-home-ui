@@ -265,9 +265,9 @@ Variante: `room`. `name` setzt die Überschrift, zum Beispiel den Raumnamen.
 ```yaml
 - type: custom:octa-room-card
   name: Wohnzimmer
-  entity: climate.thermostat_wohnzimmer
+  entity: climate.living_room
   lights:
-    - light.led_licht
+    - light.ceiling
     - entity: switch.stehlampe
       name: Stehlampe
   windows:
@@ -275,7 +275,7 @@ Variante: `room`. `name` setzt die Überschrift, zum Beispiel den Raumnamen.
       name: Links
     - binary_sensor.fenster_wohnzimmer_2
   roles:
-    media: media_player.wohnen
+    media: media_player.living_room
 ```
 
 ## Fenster und Türen im Block: `octa-contacts-card`
@@ -344,9 +344,9 @@ Spotify ist vorbereitet, aber zurückgestellt und nicht an einem echten Konto ge
 
 ```yaml
 - type: custom:octa-media-card
-  entity: media_player.wohnen
+  entity: media_player.living_room
 - type: custom:octa-media-card
-  entity: media_player.wohnen
+  entity: media_player.living_room
   variant: player
   roles:
     tts: tts.google_translate_en_com
@@ -355,13 +355,13 @@ Spotify ist vorbereitet, aber zurückgestellt und nicht an einem echten Konto ge
       media_id: http://example.invalid/stream.mp3
       media_type: music
 - type: custom:octa-media-card
-  entity: media_player.wohnen
+  entity: media_player.living_room
   variant: volume
 - type: custom:octa-media-card
-  entity: media_player.wohnen
+  entity: media_player.living_room
   variant: source
 - type: custom:octa-media-card
-  entity: media_player.wohnen
+  entity: media_player.living_room
   variant: stations
   roles:
     target_2: media_player.kueche
@@ -380,9 +380,9 @@ Spotify ist vorbereitet, aber zurückgestellt und nicht an einem echten Konto ge
     - name: Netflix
       app_id: "3201907018807"
     - name: YouTube
-      script: script.tv_quelle
+      script: script.tv_source
       variables:
-        quelle: YouTube
+        source: YouTube
 ```
 
 ## Wetter: `octa-weather-card`
@@ -458,7 +458,7 @@ Rolle: `main` (Pflicht), Domain je nach Variante.
 
 ```yaml
 - type: custom:octa-input-card
-  entity: input_select.fernseher_quelle
+  entity: input_select.tv_source
 - type: custom:octa-input-card
   entity: input_number.zieltemperatur
   variant: input_number

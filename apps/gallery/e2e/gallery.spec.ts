@@ -309,7 +309,7 @@ test('the remote has home, back and app buttons', async ({ page }) => {
   expect(await calls()).toEqual([
     { domain: 'remote', service: 'send_command', data: { command: 'KEY_HOME' }, entityId: 'remote.tv' },
     { domain: 'remote', service: 'send_command', data: { command: 'KEY_RETURN' }, entityId: 'remote.tv' },
-    { domain: 'script', service: 'turn_on', data: { variables: { quelle: 'YouTube' } }, entityId: 'script.tv_quelle' },
+    { domain: 'script', service: 'turn_on', data: { variables: { quelle: 'YouTube' } }, entityId: 'script.tv_source' },
     { domain: 'media_player', service: 'play_media', data: { media_content_id: '3201907018807', media_content_type: 'app' }, entityId: 'media_player.tv' },
   ]);
 });

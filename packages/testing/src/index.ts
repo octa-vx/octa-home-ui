@@ -116,7 +116,7 @@ export const fixtures = {
   mediaKitchen: entity('media_player.kitchen', 'idle', { supported_features: 512, friendly_name: 'Küche' }),
   windowOpen: entity('binary_sensor.fenster_kueche', 'on', { device_class: 'window', friendly_name: 'Küche' }),
   windowClosed: entity('binary_sensor.fenster_bad', 'off', { device_class: 'window', friendly_name: 'Bad' }),
-  tvScript: entity('script.tv_quelle', 'off', { friendly_name: 'TV Quelle' }),
+  tvScript: entity('script.tv_source', 'off', { friendly_name: 'TV Quelle' }),
   tv: entity('media_player.tv', 'on', { supported_features: 22460, source: 'HDMI 1', source_list: ['HDMI 1', 'TV'], volume_level: 0.3, friendly_name: 'Fernseher' }),
   tvRemote: entity('remote.tv', 'on'),
   sensorPercent: entity('sensor.humidity', '54', { device_class: 'humidity', unit_of_measurement: '%', state_class: 'measurement' }),

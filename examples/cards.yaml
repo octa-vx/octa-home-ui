@@ -46,10 +46,10 @@ views:
       - type: grid
         cards:
           - type: custom:octa-media-card
-            entity: media_player.wohnen
+            entity: media_player.living_room
             variant: stations
             roles:
-              target_2: media_player.kuche
+              target_2: media_player.kitchen
             stations:
               - name: Radio
                 media_id: http://example.invalid/stream.mp3
@@ -63,4 +63,4 @@ views:
           - type: custom:octa-appliance-card
             entity: vacuum.saugroboter
           - type: custom:octa-input-card
-            entity: input_select.fernseher_quelle
+            entity: input_select.tv_source
