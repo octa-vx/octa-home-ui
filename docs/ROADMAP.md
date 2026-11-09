@@ -17,7 +17,7 @@ German version: [ROADMAP.de.md](ROADMAP.de.md).
 | 6 | Weather, system, Docker, appliances, inputs | done |
 | 7 | Dashboard strategy and templates | done, real-world test open |
 | New | Room block, window block, lists in the visual editor, English documentation | done |
-| G | GitHub and HACS | preparation in progress |
+| G | GitHub and HACS | published, cards installable through HACS |
 | 8 | Acceptance and release 1.0 | open |
 
 ## Devices and test status
@@ -61,18 +61,21 @@ German version: [ROADMAP.de.md](ROADMAP.de.md).
 - [x] Name: Octa Home UI, repository `octa-home-ui`
 - [x] Technical names changed: `custom:octa-…-card`, `octa-home-ui.js`
 - [x] All documents in German and English
-- [ ] Decide on the GitHub account
-- [ ] CI with tests and HACS validation
-- [ ] Release with the card file, test installation through HACS
+- [x] Published as `octa-vx/octa-home-ui`
+- [x] CI with tests and HACS validation
+- [x] Release with the card file, installation through HACS tested as a custom repository
+- [ ] Test an update through HACS
 - [ ] Provide the theme through HACS
+- [ ] Listing in the official HACS catalog
 
 ## Acceptance criteria 1.0
 
 | Criterion | Status |
 |---|---|
 | Theme, cards and strategy can be installed and updated by ZIP on 2026.9.4 | met |
-| Installation and update through HACS | open |
-| Installation from the GitHub release | open |
+| Installation through HACS | met, as a custom repository, cards only |
+| Update through HACS | open |
+| Installation from the GitHub release | met |
 | Weather card with real values and forecast | met |
 | Server card with real values | met in the test instance |
 | Docker card with real states and no write access | met in the test instance |

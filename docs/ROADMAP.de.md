@@ -17,7 +17,7 @@ English version: [ROADMAP.md](ROADMAP.md).
 | 6 | Wetter, System, Docker, Haushalt, Eingaben | fertig |
 | 7 | Dashboard-Strategie und Vorlagen | fertig, Praxistest offen |
 | Neu | Raum-Block, Fenster-Block, Listen im grafischen Editor, englische Doku | fertig |
-| G | GitHub und HACS | Vorbereitung läuft |
+| G | GitHub und HACS | veröffentlicht, Karten über HACS installierbar |
 | 8 | Abnahme und Release 1.0 | offen |
 
 ## Geräte und Teststand
@@ -61,18 +61,21 @@ English version: [ROADMAP.md](ROADMAP.md).
 - [x] Name: Octa Home UI, Repository `octa-home-ui`
 - [x] Technische Namen umgestellt: `custom:octa-…-card`, `octa-home-ui.js`
 - [x] Alle Dokumente auf Deutsch und Englisch
-- [ ] GitHub-Konto festlegen
-- [ ] CI mit Tests und HACS-Prüfung
-- [ ] Release mit der Kartendatei, Installation über HACS testen
+- [x] Veröffentlicht als `octa-vx/octa-home-ui`
+- [x] CI mit Tests und HACS-Prüfung
+- [x] Release mit der Kartendatei, Installation über HACS als benutzerdefiniertes Repository getestet
+- [ ] Update über HACS testen
 - [ ] Theme über HACS bereitstellen
+- [ ] Aufnahme in den offiziellen HACS-Katalog
 
 ## Abnahmekriterien 1.0
 
 | Kriterium | Stand |
 |---|---|
 | Theme, Karten und Strategie per ZIP auf 2026.9.4 installierbar und aktualisierbar | erfüllt |
-| Installation und Update über HACS | offen |
-| Installation aus dem GitHub-Release | offen |
+| Installation über HACS | erfüllt, als benutzerdefiniertes Repository, nur Karten |
+| Update über HACS | offen |
+| Installation aus dem GitHub-Release | erfüllt |
 | Wetterkarte mit realen Werten und Vorhersage | erfüllt |
 | Serverkarte mit realen Werten | erfüllt in der Testinstanz |
 | Dockerkarte mit realen Zuständen ohne Schreibzugriff | erfüllt in der Testinstanz |

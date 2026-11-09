@@ -2,6 +2,15 @@
 
 Getestet mit Home Assistant 2026.9.4. English version: [INSTALLATION.md](INSTALLATION.md).
 
+## Installation mit HACS
+
+Getestet mit HACS 2.0.5.
+
+1. In HACS oben rechts das Menü öffnen und **Benutzerdefinierte Repositories** wählen.
+2. `octa-vx/octa-home-ui` eintragen, als Typ **Dashboard** wählen und hinzufügen.
+3. **Octa Home UI** in HACS öffnen und herunterladen. Die Ressource trägt HACS selbst ein.
+4. HACS installiert nur die Karten. Für das Theme `themes/octa-home-ui.yaml` aus der ZIP eines [Releases](https://github.com/octa-vx/octa-home-ui/releases) nach `config/themes/` legen und unten mit den Schritten 3 und 4 weitermachen.
+
 ## Installation per ZIP
 
 1. Den Inhalt des ZIP-Archivs in den Home-Assistant-Ordner `config/` entpacken.

@@ -39,7 +39,7 @@ Unlocking, disarming without a code and opening garage doors, gates and doors al
 
 ## Installation
 
-Download the ZIP of a release and follow [INSTALLATION.md](INSTALLATION.md). Installation through HACS is planned.
+Install through HACS as a custom repository, or download the ZIP of a [release](https://github.com/octa-vx/octa-home-ui/releases). Both are described in [INSTALLATION.md](INSTALLATION.md).
 
 ## Development
 

@@ -39,7 +39,7 @@ Entriegeln, Unscharfschalten ohne Code und das Öffnen von Garagentoren, Toren u
 
 ## Installation
 
-ZIP eines Releases herunterladen und [INSTALLATION.de.md](INSTALLATION.de.md) folgen. Eine Installation über HACS ist geplant.
+Über HACS als benutzerdefiniertes Repository installieren oder die ZIP eines [Releases](https://github.com/octa-vx/octa-home-ui/releases) herunterladen. Beides steht in [INSTALLATION.de.md](INSTALLATION.de.md).
 
 ## Entwicklung
 
