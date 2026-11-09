@@ -1,0 +1,66 @@
+# One example per card family. Replace the entity IDs with your own.
+views:
+  - title: Beispiele
+    type: sections
+    sections:
+      - type: grid
+        cards:
+          - type: custom:octa-light-card
+            entity: light.deckenlicht
+          - type: custom:octa-light-card
+            entity: light.led_strip
+            variant: color
+          - type: custom:octa-switch-card
+            entity: switch.steckdose
+          - type: custom:octa-scene-card
+            entity: scene.abend
+            roles:
+              scene_2: scene.film
+          - type: custom:octa-climate-card
+            entity: climate.wohnzimmer
+          - type: custom:octa-air-card
+            entity: fan.lueftung
+          - type: custom:octa-cover-card
+            entity: cover.rollladen_sued
+      - type: grid
+        cards:
+          - type: custom:octa-sensor-card
+            entity: sensor.temperatur
+            variant: gauge
+            min: 0
+            max: 40
+            warning: 28
+            danger: 35
+          - type: custom:octa-energy-card
+            entity: sensor.leistung_haus
+            variant: power_flow
+            roles:
+              solar: sensor.leistung_solar
+              grid: sensor.leistung_netz
+              battery: sensor.leistung_akku
+          - type: custom:octa-security-card
+            entity: lock.haustuer
+            variant: lock
+          - type: custom:octa-camera-card
+            entity: camera.einfahrt
+      - type: grid
+        cards:
+          - type: custom:octa-media-card
+            entity: media_player.wohnen
+            variant: stations
+            roles:
+              target_2: media_player.kuche
+            stations:
+              - name: Radio
+                media_id: http://example.invalid/stream.mp3
+                media_type: music
+          - type: custom:octa-weather-card
+            entity: weather.forecast_home
+          - type: custom:octa-system-card
+            roles:
+              cpu: sensor.prozessor
+              memory: sensor.arbeitsspeicher
+          - type: custom:octa-appliance-card
+            entity: vacuum.saugroboter
+          - type: custom:octa-input-card
+            entity: input_select.fernseher_quelle

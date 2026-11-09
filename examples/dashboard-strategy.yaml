@@ -1,0 +1,11 @@
+# Generates the whole dashboard: an overview and one view per area.
+# Create a dashboard, open the raw configuration and paste this. All settings are optional.
+strategy:
+  type: custom:octa-home-ui
+  areas_order: [wohnzimmer, kueche, flur]
+  hide_entities:
+    - light.testlampe
+  overrides:
+    sensor.waschmaschine_restzeit:
+      card: octa-appliance-card
+      variant: washer

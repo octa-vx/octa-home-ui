@@ -1,0 +1,11 @@
+{
+  "name": "@octa/primitives",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@octa/tokens": "workspace:*",
+    "lit": "3.3.1"
+  }
+}

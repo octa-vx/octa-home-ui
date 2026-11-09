@@ -1,0 +1,20 @@
+{
+  "name": "@octa/gallery",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/js": "7.4.47",
+    "@octa/primitives": "workspace:*",
+    "@octa/tokens": "workspace:*",
+    "lit": "3.3.1",
+    "@octa/widgets": "workspace:*",
+    "@octa/testing": "workspace:*",
+    "@octa/ha-core": "workspace:*"
+  }
+}

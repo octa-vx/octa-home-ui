@@ -1,0 +1,10 @@
+{
+  "name": "@octa/testing",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@octa/ha-core": "workspace:*"
+  }
+}

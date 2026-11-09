@@ -1,0 +1,38 @@
+{
+  "name": "octa-home-ui",
+  "version": "0.1.7",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.18.3",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "build": "pnpm --filter @octa/cards build && node --experimental-strip-types --no-warnings apps/theme/src/build.ts && pnpm --filter @octa/gallery build",
+    "size": "node tools/check-size.mjs",
+    "zip": "node tools/package-zip.mjs",
+    "e2e": "playwright test",
+    "e2e:update": "playwright test --update-snapshots",
+    "ha-smoke": "node tools/ha-smoke.mjs",
+    "ha-theme": "node tools/ha-theme-check.mjs",
+    "ha-cards": "node tools/ha-cards-check.mjs",
+    "ha-strategy": "node tools/ha-strategy-check.mjs",
+    "ha-sources": "node tools/ha-sources-check.mjs",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm size && pnpm zip && pnpm e2e"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
+    "@eslint/js": "9.38.0",
+    "@fontsource-variable/manrope": "5.3.0",
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.18.12",
+    "eslint": "9.38.0",
+    "fflate": "0.8.2",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.2",
+    "vite": "7.1.12",
+    "vitest": "3.2.4",
+    "yaml": "2.9.1"
+  }
+}

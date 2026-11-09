@@ -1,0 +1,11 @@
+{
+  "name": "@octa/strategy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "devDependencies": {
+    "@octa/schema": "workspace:*",
+    "@octa/widgets": "workspace:*"
+  }
+}

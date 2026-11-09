@@ -1,0 +1,8 @@
+# One area as a section of a dashboard you build yourself.
+views:
+  - title: Wohnzimmer
+    type: sections
+    sections:
+      - strategy:
+          type: custom:octa-home-ui
+          area: wohnzimmer

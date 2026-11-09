@@ -1,0 +1,16 @@
+{
+  "name": "@octa/widgets",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@octa/ha-core": "workspace:*",
+    "@octa/primitives": "workspace:*",
+    "@octa/schema": "workspace:*",
+    "lit": "3.3.1"
+  },
+  "devDependencies": {
+    "@octa/testing": "workspace:*"
+  }
+}
