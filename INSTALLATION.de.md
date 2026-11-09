@@ -8,7 +8,7 @@ Getestet mit HACS 2.0.5.
 
 1. In HACS oben rechts das Menü öffnen und **Benutzerdefinierte Repositories** wählen.
 2. `octa-vx/octa-home-ui` eintragen, als Typ **Dashboard** wählen und hinzufügen.
-3. **Octa Home UI** in HACS öffnen und herunterladen. Die Ressource trägt HACS selbst ein.
+3. **Octa Home UI** in HACS öffnen und herunterladen. Die Ressource trägt HACS selbst ein und hält sie bei Updates aktuell.
 4. HACS installiert nur die Karten. Für das Theme `themes/octa-home-ui.yaml` aus der ZIP eines [Releases](https://github.com/octa-vx/octa-home-ui/releases) nach `config/themes/` legen und unten mit den Schritten 3 und 4 weitermachen.
 
 ## Installation per ZIP

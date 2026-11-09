@@ -46,7 +46,7 @@ export function api(path, options = {}) {
 
 /** Unpacks the built ZIP into the test instance and reloads the themes. */
 export async function installZip() {
-  const zip = unzipSync(readFileSync(`dist/octa-home-ui-${version}.zip`));
+  const zip = unzipSync(readFileSync('dist/octa-home-ui.zip'));
   for (const [name, content] of Object.entries(zip)) {
     const target = join(configDir, name);
     mkdirSync(dirname(target), { recursive: true });

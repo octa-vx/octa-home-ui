@@ -1,8 +1,7 @@
-// Creates dist/octa-home-ui-<version>.zip, the first supported way to install.
+// Creates dist/octa-home-ui.zip. The name has no version on purpose: HACS downloads every file of a
+// release and keeps what it does not overwrite, so a versioned name would pile up on each update.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { zipSync } from 'fflate';
-
-const { version } = JSON.parse(readFileSync('package.json', 'utf8'));
 
 const files = {
   'www/octa-home-ui/octa-home-ui.js': 'apps/cards/dist/octa-home-ui.js',
@@ -29,7 +28,7 @@ const entries = Object.fromEntries(
 );
 
 mkdirSync('dist', { recursive: true });
-const target = `dist/octa-home-ui-${version}.zip`;
+const target = 'dist/octa-home-ui.zip';
 const archive = zipSync(entries, { level: 9 });
 writeFileSync(target, archive);
 console.log(`${target}: ${archive.length} B`);

@@ -1,6 +1,6 @@
 # Roadmap: Octa Home UI 1.0
 
-Stand: 09.11.2026, Version 0.1.8. Zielsystem ist Home Assistant Container 2026.9.4.
+Stand: 09.11.2026, Version 0.1.9. Zielsystem ist Home Assistant Container 2026.9.4.
 
 English version: [ROADMAP.md](ROADMAP.md).
 
@@ -64,7 +64,7 @@ English version: [ROADMAP.md](ROADMAP.md).
 - [x] Veröffentlicht als `octa-vx/octa-home-ui`
 - [x] CI mit Tests und HACS-Prüfung
 - [x] Release mit der Kartendatei, Installation über HACS als benutzerdefiniertes Repository getestet
-- [ ] Update über HACS testen
+- [x] Update über HACS getestet
 - [ ] Theme über HACS bereitstellen
 - [ ] Aufnahme in den offiziellen HACS-Katalog
 
@@ -74,7 +74,7 @@ English version: [ROADMAP.md](ROADMAP.md).
 |---|---|
 | Theme, Karten und Strategie per ZIP auf 2026.9.4 installierbar und aktualisierbar | erfüllt |
 | Installation über HACS | erfüllt, als benutzerdefiniertes Repository, nur Karten |
-| Update über HACS | offen |
+| Update über HACS | erfüllt, als benutzerdefiniertes Repository |
 | Installation aus dem GitHub-Release | erfüllt |
 | Wetterkarte mit realen Werten und Vorhersage | erfüllt |
 | Serverkarte mit realen Werten | erfüllt in der Testinstanz |
