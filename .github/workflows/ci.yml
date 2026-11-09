@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    # The same image as tools/dev.sh, the screenshot baselines depend on it.
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+      options: --shm-size=1g
+    env:
+      HOME: /root
+      COREPACK_ENABLE_DOWNLOAD_PROMPT: 0
+    steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+
+  hacs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hacs/action@main
+        with:
+          category: plugin
+          ignore: brands
